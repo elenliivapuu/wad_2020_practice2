@@ -41,7 +41,8 @@
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>Agile software development</td>
+                    <td><a href="https://courses.cs.ut.ee/2020/ASD/fall" target="_blank">Agile software development</a>
+                    </td>
                     <td>Semester 1 fall</td>
                     <td>82</td>
                 </tr>
@@ -64,6 +65,34 @@
                     <td>65</td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">
+                        <button>Add new course</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <form>
+                            <label for="title">Enter title</label>
+                            <input id="title" placeholder="Enter title here..." type="text" name="title">
+                            <hr>
+                            <select name="semester" id="semester">
+                                <option disabled selected>Please select</option>
+                                <option value="">Semester 1 fall</option>
+                                <option value="">Semester 1 spring</option>
+                                <option value="">Semester 2 fall</option>
+                                <option value="">Semester 2 spring</option>
+                            </select>
+                            <hr>
+                            <label for="grade">Grade</label>
+                            <input placeholder="Grade" type="number" name="grade" min="0" max="100">
+                            <hr>
+                            <button type="submit">Add</button>
+                        </form>
+                    </td>
+                </tr>
+            </tfoot>
         </table>
     </section>
 
